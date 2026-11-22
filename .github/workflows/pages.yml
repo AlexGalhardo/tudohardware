@@ -1,7 +1,7 @@
 name: Pages
 
 # Every push to main builds the static site and publishes it to GitHub Pages
-# at https://alexgalhardo.github.io/tudohardware (BASE_PATH defaults to /tudohardware).
+# at https://tudohardware.com (BASE_PATH defaults to /).
 on:
   push:
     branches: [main]

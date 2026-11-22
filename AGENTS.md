@@ -6,7 +6,7 @@ Instruções para agentes de código neste repositório. O `CLAUDE.md` importa e
 
 ## O que é o projeto
 
-Site de fichas técnicas e comparação de produtos com links de afiliado, no ar em <https://alexgalhardo.github.io/tudohardware> (GitHub Pages). Não há banco nem servidor: o conteúdo são os arquivos JSON de `data/`, importados estaticamente, e a saída é 100% estática (Astro).
+Site de fichas técnicas e comparação de produtos com links de afiliado, no ar em <https://tudohardware.com> (GitHub Pages com domínio próprio). Não há banco nem servidor: o conteúdo são os arquivos JSON de `data/`, importados estaticamente, e a saída é 100% estática (Astro).
 
 ## Início de toda sessão
 
@@ -60,7 +60,7 @@ Astro 7 (estático) · React 19 (ilhas) · TypeScript 7 strict · Tailwind CSS 4
 - **Links de afiliado só pelo dashboard.** Use `productAffiliateHref`. O único caso em que o botão aponta direto para a loja é o desvio de `useDashboardDown()`, quando o dashboard não responde. Ver "Links de afiliado" no `README.md` da branch `legacy`.
 - **`id` do produto é único na categoria e estável.** Id repetido falha o build; id trocado apaga os cliques do produto no dashboard.
 - **Categoria nova:** arquivo em `data/`, entrada em `categories` e no mapa de `lib/data.ts` e em `categoryFileMap` de `scripts/create-sitemap.ts`.
-- **Base:** link interno e imagem de `public/` usam `withBase`, nunca `/caminho` solto; no Pages o site vive em `/tudohardware`. Não escreva o domínio antigo em lugar nenhum.
+- **Base:** link interno e imagem de `public/` usam `withBase`, nunca `/caminho` solto; o site vive na raiz de `https://tudohardware.com` (`BASE_PATH` padrão `/`). `SITE_URL` em `lib/affiliate-catalogue.ts` continua com o endereço antigo do Pages de propósito: ele é a chave dos produtos no dashboard e trocá-lo apaga os cliques.
 - **Segredos:** nada de chave real no repositório. `.env` é ignorado pelo git; `.env.example` só tem placeholders.
 - **Dependências:** última versão estável, com versão exata, sem `^` nem `~`. Dependência nova só com aprovação do dono.
 - **TypeScript:** sem `any` (o Biome recusa), sem `@ts-ignore`. `bun run typecheck` precisa passar.

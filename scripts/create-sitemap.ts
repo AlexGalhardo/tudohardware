@@ -1,8 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-// Same origin and base as astro.config.ts; the Docker image builds with BASE_PATH=/.
-const SITE = `https://alexgalhardo.github.io${(process.env.BASE_PATH ?? "/tudohardware").replace(/\/$/, "")}`;
+// Same origin and base as astro.config.ts.
+const SITE = `https://tudohardware.com${(process.env.BASE_PATH || "/").replace(/\/$/, "")}`;
 
 interface Product {
 	id: string;

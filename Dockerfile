@@ -12,7 +12,7 @@ RUN bun install --frozen-lockfile --ignore-scripts
 
 COPY . .
 
-# Served at the root of its own origin, unlike GitHub Pages (/tudohardware).
+# Served at the root of its own origin, same as the custom domain.
 # Without LINKS_DASHBOARD_TOKEN the build only validates the links catalogue and sends nothing.
 ENV BASE_PATH=/
 RUN bun run build

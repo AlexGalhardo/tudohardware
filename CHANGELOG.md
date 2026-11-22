@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- **pages:** build for the custom domain `tudohardware.com` (`site` and `base: /`), which fixes the missing styles caused by `/tudohardware/_astro/*` assets returning 404; sitemap and `robots.txt` now use the new domain
+
 ### Removed
 
 - **docs:** drop `README.md`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md` and `SECURITY.md` from the root; the previous tree is kept on the `legacy` branch

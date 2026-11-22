@@ -6,10 +6,10 @@ import { defineConfig } from "astro/config";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 
-// GitHub Pages serves the site under /tudohardware; the Docker image builds with BASE_PATH=/.
+// The custom domain serves the site at the root of its own origin.
 export default defineConfig({
-	site: "https://alexgalhardo.github.io",
-	base: process.env.BASE_PATH || "/tudohardware",
+	site: "https://tudohardware.com",
+	base: process.env.BASE_PATH || "/",
 	output: "static",
 	srcDir: "./astro",
 	trailingSlash: "never",

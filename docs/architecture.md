@@ -22,7 +22,7 @@ Site de fichas técnicas e comparação de produtos, com links de afiliado. Astr
 
 ## Base e site
 
-`astro.config.ts` fixa `site: https://alexgalhardo.github.io` e `base` vindo de `BASE_PATH` (padrão `/tudohardware`, o caminho do GitHub Pages). A imagem Docker builda com `BASE_PATH=/`. Em componentes, nunca escreva `href="/..."`: use `withBase("/...")`.
+`astro.config.ts` fixa `site: https://tudohardware.com` e `base` vindo de `BASE_PATH` (padrão `/`, a raiz do domínio próprio). A imagem Docker também builda com `BASE_PATH=/`. Em componentes, nunca escreva `href="/..."`: use `withBase("/...")`.
 
 ## Fluxo de uma página
 
