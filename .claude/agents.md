@@ -9,7 +9,6 @@ Regras e mapa do código: [`AGENTS.md`](../AGENTS.md). Leia primeiro. Este arqui
 | [`docs/tooling.md`](../docs/tooling.md) | Ferramentas, scripts, hooks do git, regras de dependências e formatação |
 | [`docs/testing.md`](../docs/testing.md) | O que cada teste cobre, como isolam rede e arquivos, o que não tem teste |
 | [`docs/workflows.md`](../docs/workflows.md) | Commits, versão e release, deploy no Pages, conteúdo novo, links de afiliado |
-| [`README.md`](../README.md) | Visão geral e o contrato dos links de afiliado |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Histórico de versões |
 
 `docs/prompts/` guarda os prompts usados para gerar o JSON de cada categoria; não é documentação do código.

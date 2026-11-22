@@ -36,4 +36,4 @@ Edite `data/<arquivo>.json`. O `id` é único na categoria; todo produto precisa
 
 ## Links de afiliado
 
-O contrato com o dashboard de links está no `README.md` ("Links de afiliado"). A variável é `LINKS_DASHBOARD_TOKEN`, a mesma em todos os sites. `lib/affiliate-links.ts` é o mesmo arquivo nos outros sites: mudou aqui, mude lá.
+O contrato com o dashboard de links está no `README.md` da branch `legacy` ("Links de afiliado"). A variável é `LINKS_DASHBOARD_TOKEN`, a mesma em todos os sites. `lib/affiliate-links.ts` é o mesmo arquivo nos outros sites: mudou aqui, mude lá.

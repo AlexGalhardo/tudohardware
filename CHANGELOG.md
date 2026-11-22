@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- **docs:** drop `README.md`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md` and `SECURITY.md` from the root; the previous tree is kept on the `legacy` branch
+
 ## [0.2.0] - 2026-11-14
 
 ### Added

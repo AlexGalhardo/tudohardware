@@ -57,7 +57,7 @@ Astro 7 (estático) · React 19 (ilhas) · TypeScript 7 strict · Tailwind CSS 4
 
 ## Regras
 
-- **Links de afiliado só pelo dashboard.** Use `productAffiliateHref`. O único caso em que o botão aponta direto para a loja é o desvio de `useDashboardDown()`, quando o dashboard não responde. Ver "Links de afiliado" no [`README.md`](README.md).
+- **Links de afiliado só pelo dashboard.** Use `productAffiliateHref`. O único caso em que o botão aponta direto para a loja é o desvio de `useDashboardDown()`, quando o dashboard não responde. Ver "Links de afiliado" no `README.md` da branch `legacy`.
 - **`id` do produto é único na categoria e estável.** Id repetido falha o build; id trocado apaga os cliques do produto no dashboard.
 - **Categoria nova:** arquivo em `data/`, entrada em `categories` e no mapa de `lib/data.ts` e em `categoryFileMap` de `scripts/create-sitemap.ts`.
 - **Base:** link interno e imagem de `public/` usam `withBase`, nunca `/caminho` solto; no Pages o site vive em `/tudohardware`. Não escreva o domínio antigo em lugar nenhum.
